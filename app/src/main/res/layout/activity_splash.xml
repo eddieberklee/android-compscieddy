@@ -43,9 +43,20 @@
     </RelativeLayout>
 
     <com.compscieddy.compscieddy.ClickMeter
-        android:layout_width="30dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/eddie_face_container"/>
+        android:id="@+id/click_meter"
+        android:layout_width="25dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="-40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/eddie_face_container"/>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/click_meter"
+        android:src="@drawable/ic_lock_outline_white_48dp"/>
 
     <TextView
         android:id="@+id/greeting_message"
@@ -55,11 +66,22 @@
         android:textColor="@android:color/white"
         android:alpha="0"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="70dp"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="Tap...a lot to open the app"/>
+        android:text="Tap Me to the Top to Unlock"/>
+
+    <Button
+        android:id="@+id/real_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="13sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:text="Enter"/>
 
 </RelativeLayout>

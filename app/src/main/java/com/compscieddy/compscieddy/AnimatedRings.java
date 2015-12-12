@@ -35,7 +35,7 @@ public class AnimatedRings extends View {
     try {
       mSingleRun = a.getBoolean(R.styleable.AnimatedRings_singleRun, false);
       mAutoRun = a.getBoolean(R.styleable.AnimatedRings_autoRun, false);
-      mRingStrokeWidth = a.getInt(R.styleable.AnimatedRings_ringStrokeWidth, 2);
+      mRingStrokeWidth = a.getInt(R.styleable.AnimatedRings_ringStrokeWidth, 4);
       // TODO: add attribute for stroke width
     } finally {
       a.recycle();
