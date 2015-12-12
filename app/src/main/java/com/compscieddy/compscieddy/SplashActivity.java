@@ -2,6 +2,7 @@ package com.compscieddy.compscieddy;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -14,12 +15,20 @@ public class SplashActivity extends AppCompatActivity {
   @Bind(R.id.eddie_face) ImageView mEddieFace;
   @Bind(R.id.eddie_title) TextView mEddieTitle;
   @Bind(R.id.greeting_message) TextView mGreetingMessage;
+  @Bind(R.id.animated_rings) AnimatedRings mAnimatedRings;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_splash);
     ButterKnife.bind(this);
+
+    mEddieFace.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        mAnimatedRings.startAnimation();
+      }
+    });
   }
 
   @Override

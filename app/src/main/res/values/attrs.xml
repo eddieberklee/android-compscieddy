@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimatedRings">
+        <attr name="singleRun" format="boolean"/>
+        <attr name="autoRun" format="boolean"/>
+        <attr name="ringStrokeWidth" format="integer"/>
+    </declare-styleable>
+</resources>
