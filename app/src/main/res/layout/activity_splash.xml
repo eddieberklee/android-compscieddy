@@ -36,6 +36,8 @@
             android:alpha="0"
             android:translationY="20dp"
             android:layout_marginTop="5dp"
+            android:scaleX="0"
+            android:scaleY="0"
             android:textSize="8sp"
             android:textColor="@android:color/white"
             android:layout_below="@+id/eddie_face"

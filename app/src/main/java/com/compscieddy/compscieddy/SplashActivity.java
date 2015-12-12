@@ -49,9 +49,6 @@ public class SplashActivity extends AppCompatActivity {
   protected void onResume() {
     super.onResume();
 
-    mEddieFace.setScaleX(0f);
-    mEddieFace.setScaleY(0f);
-
     mEddieFace.animate()
         .setInterpolator(new OvershootInterpolator(2.3f))
         .scaleX(1.0f)

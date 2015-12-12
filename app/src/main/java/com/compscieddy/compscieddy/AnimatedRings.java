@@ -21,6 +21,7 @@ public class AnimatedRings extends View {
   private Context mContext;
   private Handler mHandler;
   private Runnable mRunnable;
+  private Runnable mRepeatingRunnable;
   private Paint mPaint;
   private boolean mSingleRun; // whether or not to loop animation
   private boolean mAutoRun; // start animation on initialization?
@@ -35,7 +36,7 @@ public class AnimatedRings extends View {
     try {
       mSingleRun = a.getBoolean(R.styleable.AnimatedRings_singleRun, false);
       mAutoRun = a.getBoolean(R.styleable.AnimatedRings_autoRun, false);
-      mRingStrokeWidth = a.getInt(R.styleable.AnimatedRings_ringStrokeWidth, 4);
+      mRingStrokeWidth = a.getInt(R.styleable.AnimatedRings_ringStrokeWidth, 5);
       // TODO: add attribute for stroke width
     } finally {
       a.recycle();
@@ -53,6 +54,14 @@ public class AnimatedRings extends View {
         mHandler.postDelayed(mRunnable, 30);
       }
     };
+    mRepeatingRunnable = new Runnable() {
+      @Override
+      public void run() {
+        mRings.add(new Ring(60));
+        mHandler.postDelayed(mRepeatingRunnable, 400);
+        mSingleRun = true; // for repeating, this has to be - and can't have onClick for adding rings
+      }
+    };
 
     if (mAutoRun) {
       startAnimation();
@@ -64,6 +73,7 @@ public class AnimatedRings extends View {
   public void startAnimation() {
     mRings.add(new Ring(60));
     mHandler.post(mRunnable);
+    mHandler.post(mRepeatingRunnable);
   }
 
   private void stopAnimation() {
