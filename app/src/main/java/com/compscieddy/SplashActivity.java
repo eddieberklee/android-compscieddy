@@ -1,5 +1,6 @@
 package com.compscieddy;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -40,6 +41,13 @@ public class SplashActivity extends AppCompatActivity {
       public void run() {
         mGreetingMessage.setText("Psyche! - here's the button:");
         mRealButton.setVisibility(View.VISIBLE);
+      }
+    });
+
+    mGreetingMessage.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        startActivity(new Intent(SplashActivity.this, SkittlesActivity.class));
       }
     });
 
