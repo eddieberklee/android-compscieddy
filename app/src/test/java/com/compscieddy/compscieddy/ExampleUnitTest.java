@@ -1,4 +1,4 @@
-package com.compscieddy.compscieddy;
+package com.compscieddy;
 
 import org.junit.Test;
 

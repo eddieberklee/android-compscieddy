@@ -1,4 +1,4 @@
-package com.compscieddy.compscieddy;
+package com.compscieddy;
 
 import android.content.Context;
 import android.graphics.Canvas;

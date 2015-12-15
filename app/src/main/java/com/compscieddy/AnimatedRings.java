@@ -1,4 +1,4 @@
-package com.compscieddy.compscieddy;
+package com.compscieddy;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -64,7 +64,8 @@ public class AnimatedRings extends View {
     };
 
     if (mAutoRun) {
-      startAnimation();
+      mHandler.post(mRunnable);
+      mHandler.post(mRepeatingRunnable);
     }
   }
 
@@ -73,7 +74,6 @@ public class AnimatedRings extends View {
   public void startAnimation() {
     mRings.add(new Ring(60));
     mHandler.post(mRunnable);
-    mHandler.post(mRepeatingRunnable);
   }
 
   private void stopAnimation() {

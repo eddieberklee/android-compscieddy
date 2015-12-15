@@ -14,7 +14,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true">
-        <com.compscieddy.compscieddy.AnimatedRings
+        <com.compscieddy.AnimatedRings
             android:id="@+id/animated_rings"
             android:layout_centerInParent="true"
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
             android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 
-    <com.compscieddy.compscieddy.ClickMeter
+    <com.compscieddy.ClickMeter
         android:id="@+id/click_meter"
         android:layout_width="25dp"
         android:layout_height="120dp"
