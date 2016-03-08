@@ -1,4 +1,4 @@
-package com.compscieddy;
+package com.compscieddy.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -6,6 +6,8 @@ import android.graphics.Paint;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.compscieddy.R;
 
 /**
  * Created by elee on 12/11/15.

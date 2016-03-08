@@ -10,8 +10,52 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.compscieddy.SkittlesActivity">
 
-    <com.compscieddy.SkittlesPie
+    <com.compscieddy.ui.SkittlesPie
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <com.compscieddy.ui.ExpandableHorizontalScrollView
+        android:id="@+id/expandable_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/scroll_view_children_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_red_1"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_red_2"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_orange_1"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_orange_2"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_yellow_1"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_yellow_2"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_green_1"/>
+            <View
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/flatui_green_2"/>
+        </LinearLayout>
+    </com.compscieddy.ui.ExpandableHorizontalScrollView>
 
 </RelativeLayout>

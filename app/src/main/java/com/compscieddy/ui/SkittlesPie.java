@@ -1,4 +1,4 @@
-package com.compscieddy;
+package com.compscieddy.ui;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -13,6 +13,9 @@ import android.view.View;
 import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.compscieddy.R;
+import com.compscieddy.Util;
 
 /**
  * Created by elee on 12/13/15.

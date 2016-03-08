@@ -1,4 +1,4 @@
-package com.compscieddy;
+package com.compscieddy.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -7,6 +7,8 @@ import android.graphics.Paint;
 import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.View;
+
+import com.compscieddy.R;
 
 import java.util.HashSet;
 import java.util.Set;

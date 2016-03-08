@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.compscieddy.ui.AnimatedRings;
+import com.compscieddy.ui.ClickMeter;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
@@ -19,8 +22,7 @@ public class SplashActivity extends AppCompatActivity {
   @Bind(R.id.greeting_message) TextView mGreetingMessage;
   @Bind(R.id.animated_rings) AnimatedRings mAnimatedRings;
   @Bind(R.id.click_meter) ClickMeter mClickMeter;
-  @Bind(R.id.real_button)
-  Button mRealButton;
+  @Bind(R.id.real_button) Button mRealButton;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
